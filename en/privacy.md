@@ -3,9 +3,9 @@ title: Privacy Policy
 locale: en
 documentId: privacy
 revision: 1
-versionDate: 2026-05-16
-effectiveDate: 2026-05-16
-nextReviewDate: 2026-08-16
+versionDate: 2026-05-17
+effectiveDate: 2026-05-17
+nextReviewDate: 2026-08-17
 status: published
 checksumSha256: ''
 ---
@@ -31,7 +31,7 @@ The Service uses `@react-native-async-storage/async-storage` to store the follow
 | `consentState`      | Terms consent status                                   | Manages agreement to Terms of Use and Privacy Policy |
 | `subscriptionStore` | Subscription status, next renewal date, trial end date | Feature gating based on subscription status          |
 | `settingsStore`     | Audio settings, theme settings, session settings       | Cross-session restoration of user preferences        |
-| `customDecksStore`  | Word lists and names of user-created decks             | Persistence of My Decks feature                      |
+| `customDecksStore`  | Word lists and names of user-created decks             | Persistence of Custom Word Sets feature              |
 
 ### 1.2 Purchase Information via RevenueCat
 
@@ -72,7 +72,7 @@ The Service does not collect the following information.
 Personal information collected will be used only within the scope of the following purposes. The information will not be used beyond these purposes.
 
 1. **Service provision and maintenance**: Enabling and disabling features based on subscription status, subscription management, and free trial period management
-2. **Persistence of user settings**: Cross-session restoration of audio settings, theme settings, session settings, My Decks, and other preferences
+2. **Persistence of user settings**: Cross-session restoration of audio settings, theme settings, session settings, Custom Word Sets, and other preferences
 3. **Customer support**: Querying and verifying the RevenueCat customer ID for purchase restoration troubleshooting
 4. **App improvement**: Verifying behavior by OS version and confirming OTA update distribution status (Crashlytics and similar crash analysis tools are not currently integrated; only basic EAS Update logs are available at this time)
 5. **Consent management**: Re-consent control when the Terms of Use or Privacy Policy are revised

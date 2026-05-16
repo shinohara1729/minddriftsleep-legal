@@ -24,5 +24,4 @@ title: MindDriftSleep — Legal Documents
 
 ## このサイトについて
 
-- 文書同期メタデータ: [`legalManifest.json`](./legalManifest.json) / [`legalManifest.schema.json`](./legalManifest.schema.json)
 - お問い合わせ: 各文書末尾の「連絡先」セクションをご参照ください。

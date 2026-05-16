@@ -1,12 +1,12 @@
 {
   "$schema": "./legalManifest.schema.json",
   "schemaVersion": 1,
-  "publishedAt": "2026-05-16T00:00:00+09:00",
+  "publishedAt": "2026-05-17T00:00:00+09:00",
   "documents": {
     "terms": {
       "latestRevision": 1,
       "minRequiredRevision": 1,
-      "versionDate": "2026-05-16",
+      "versionDate": "2026-05-17",
       "urls": {
         "ja": "https://shinohara1729.github.io/minddriftsleep-legal/ja/terms.html",
         "en": "https://shinohara1729.github.io/minddriftsleep-legal/en/terms.html"
@@ -15,7 +15,7 @@
     "privacy": {
       "latestRevision": 1,
       "minRequiredRevision": 1,
-      "versionDate": "2026-05-16",
+      "versionDate": "2026-05-17",
       "urls": {
         "ja": "https://shinohara1729.github.io/minddriftsleep-legal/ja/privacy.html",
         "en": "https://shinohara1729.github.io/minddriftsleep-legal/en/privacy.html"
@@ -24,7 +24,7 @@
     "sct": {
       "latestRevision": 1,
       "minRequiredRevision": 1,
-      "versionDate": "2026-05-16",
+      "versionDate": "2026-05-17",
       "urls": {
         "ja": "https://shinohara1729.github.io/minddriftsleep-legal/ja/sct.html"
       }

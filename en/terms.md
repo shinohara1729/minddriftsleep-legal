@@ -3,9 +3,9 @@ title: Terms of Use
 locale: en
 documentId: terms
 revision: 1
-versionDate: 2026-05-16
-effectiveDate: 2026-05-16
-nextReviewDate: 2026-08-16
+versionDate: 2026-05-17
+effectiveDate: 2026-05-17
+nextReviewDate: 2026-08-17
 status: published
 checksumSha256: ''
 ---
@@ -29,7 +29,7 @@ checksumSha256: ''
 2. 1/f fluctuation acoustic and visual effects are positioned as supplementary elements that help create a calming environment during sessions. They are not core features.
 3. The features of the Service are classified as follows.
    - **Free features**: Limited-theme word shuffle, limited meditation audio, sessions with default settings
-   - **Premium features**: All-theme word shuffle, all meditation audio, unlimited creation and editing of My Decks, sessions with additional settings
+   - **Premium features**: All-theme word shuffle, all meditation audio, unlimited creation and editing of Custom Word Sets, sessions with additional settings
 4. Use of Premium features requires a separate subscription.
 
 ## Article 3 Account / User Identification
@@ -68,7 +68,7 @@ Users must not engage in any of the following acts when using the Service.
 
 1. Copyrights, trademark rights, and all other intellectual property rights relating to the programs, word data, audio files, narration scripts, text, images, videos, trademarks, and all other content contained in the Service (hereinafter "the Content") belong to the Operator or the rightful holders.
 2. Users are granted only the right to use the Service within the scope defined in these Terms, and do not acquire ownership or intellectual property rights to the Content.
-3. Information relating to My Decks (word lists, names, etc.) created by Users within the Service (hereinafter "User Decks") belongs to the User. However, User Decks can only be used within the Service, and no export functionality is provided.
+3. Information relating to Custom Word Sets (word lists, names, etc.) created by Users within the Service (hereinafter "User Decks") belongs to the User. However, User Decks can only be used within the Service, and no export functionality is provided.
 
 ## Article 7 Disclaimer / Health Claim Restrictions
 
@@ -76,7 +76,7 @@ Users must not engage in any of the following acts when using the Service.
 2. The effects of the Service vary from person to person, and there is no guarantee that all Users will experience the same results.
 3. The Service is provided for entertainment and wellness purposes to assist with sleep induction. Users experiencing persistent sleep issues are encouraged to consult a healthcare professional.
 4. The Operator is not liable for any damages (including but not limited to physical or mental harm, data loss, or device malfunction) arising from the use of the Service, unless caused by the Operator's intentional misconduct or gross negligence.
-5. The Service will not use any of the following expressions in its representations and descriptions.
+5. The Service will not use any of the following expressions in its representations and descriptions (see also the separate "Health Claim NG Expression List" for details).
    - Expressions suggesting disease treatment (e.g., "treat insomnia," "cure sleep disorders")
    - Expressions suggesting replacement for medical treatment or medication (e.g., "replacement for medical prescription," "alternative to sleeping pills")
    - Guaranteed efficacy claims (e.g., "guaranteed to fall asleep," "100% effective")
