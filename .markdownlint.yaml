@@ -1,0 +1,11 @@
+# Jekyll の慣例 (frontmatter title + body H1) を許容
+MD025:
+  front_matter_title: ""
+
+# 日本語では文字数制限が合わないため無効化
+MD013: false
+
+# 法務文書本文で <br> を使用するため許可
+MD033:
+  allowed_elements:
+    - br

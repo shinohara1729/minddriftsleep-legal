@@ -1,0 +1,9 @@
+title: MindDriftSleep Legal
+description: 利用規約 / プライバシーポリシー / 特定商取引法に基づく表示の公開リポジトリ
+markdown: kramdown
+exclude:
+  - README.md
+  - CHANGELOG.md
+  - node_modules
+  - vendor
+  - .gitignore

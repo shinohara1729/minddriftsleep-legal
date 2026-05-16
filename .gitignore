@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Jekyll / Ruby
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/bundle/
+
+# Node
+node_modules/
+
+# Environment / secrets
+.env
+.env.*
+
+# Editor
+.idea/
+.vscode/
+*.swp

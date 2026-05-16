@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://shinohara1729.github.io/minddriftsleep-legal/legalManifest.schema.json",
+  "title": "MindDriftSleep Legal Manifest",
+  "description": "アプリと公開法務文書 (Terms of Use / Privacy Policy / 特定商取引法に基づく表示) の同期メタデータスキーマ。",
+  "type": "object",
+  "required": ["schemaVersion", "publishedAt", "documents"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "description": "instance 側の $schema 参照 (本スキーマ自身を指す URI)。エディタ補完用に許容。",
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "schemaVersion": {
+      "description": "本スキーマのバージョン。v2 以降は別スキーマファイル + アプリ側 fetcher で分岐する。",
+      "type": "integer",
+      "const": 1
+    },
+    "publishedAt": {
+      "description": "本 manifest を公開した時刻 (ISO 8601, タイムゾーン付き)。",
+      "type": "string",
+      "format": "date-time"
+    },
+    "documents": {
+      "type": "object",
+      "required": ["terms", "privacy", "sct"],
+      "additionalProperties": false,
+      "properties": {
+        "terms": { "$ref": "#/definitions/bilingualDocument" },
+        "privacy": { "$ref": "#/definitions/bilingualDocument" },
+        "sct": { "$ref": "#/definitions/jaOnlyDocument" }
+      }
+    }
+  },
+  "definitions": {
+    "revisionFields": {
+      "type": "object",
+      "required": ["latestRevision", "minRequiredRevision", "versionDate"],
+      "properties": {
+        "latestRevision": {
+          "description": "公開中の最新 revision。frontmatter の revision と一致する。",
+          "type": "integer",
+          "minimum": 1
+        },
+        "minRequiredRevision": {
+          "description": "強制再同意のしきい値。currentRevision < minRequiredRevision でユーザーに再同意モーダルを表示する。",
+          "type": "integer",
+          "minimum": 1
+        },
+        "versionDate": {
+          "description": "frontmatter の versionDate と一致 (YYYY-MM-DD)。",
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        }
+      }
+    },
+    "bilingualDocument": {
+      "description": "ja / en 両方の本文と URL を持つ文書 (terms / privacy)。",
+      "allOf": [
+        { "$ref": "#/definitions/revisionFields" },
+        {
+          "type": "object",
+          "required": ["urls"],
+          "additionalProperties": false,
+          "properties": {
+            "latestRevision": true,
+            "minRequiredRevision": true,
+            "versionDate": true,
+            "urls": {
+              "type": "object",
+              "required": ["ja", "en"],
+              "additionalProperties": false,
+              "properties": {
+                "ja": { "type": "string", "format": "uri" },
+                "en": { "type": "string", "format": "uri" }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "jaOnlyDocument": {
+      "description": "ja のみ提供する文書 (sct = 特定商取引法に基づく表示)。",
+      "allOf": [
+        { "$ref": "#/definitions/revisionFields" },
+        {
+          "type": "object",
+          "required": ["urls"],
+          "additionalProperties": false,
+          "properties": {
+            "latestRevision": true,
+            "minRequiredRevision": true,
+            "versionDate": true,
+            "urls": {
+              "type": "object",
+              "required": ["ja"],
+              "additionalProperties": false,
+              "properties": {
+                "ja": { "type": "string", "format": "uri" }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
